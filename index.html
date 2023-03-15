@@ -11,6 +11,16 @@
       background-attachment: fixed;
     }
   </style>
+  <script>
+  window.addEventListener('load', function () {
+    gradioURL = window.location.href
+    if (!gradioURL.endsWith('?__theme=dark')) {
+      window.location.replace(gradioURL + '?__theme=light');
+    } else {
+      window.location.replace(gradioURL + '?__theme=light');
+    }
+  });
+    </script>
   
   </head>
   <body style=">
