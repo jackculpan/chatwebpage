@@ -43,11 +43,18 @@
         text-align: center;
       }
 
-      @media (max-width: 767px) {
+    .no-mobile-support {
+      display: none;
+    }
+
+    @media (max-width: 767px) {
       .hide-on-mobile {
         display: none;
-        }
       }
+      .no-mobile-support {
+        display: block;
+      }
+    }
     </style>
   </head>
   <body>
@@ -56,6 +63,7 @@
         <div>
           <div style="width:100%;text-align: center;margin:0 auto;border-radius:12px; font-family: math;">
             <h1>Chat with any webpage</h1>
+            <p class="no-mobile-support">Sorry, there's no mobile support for this right now.</p>
             <iframe
               src="https://jackculpan-chatwebpage-com.hf.space?__theme=light"
               frameborder="0"
