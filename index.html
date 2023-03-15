@@ -14,9 +14,7 @@
   <script>
   window.addEventListener('load', function () {
     gradioURL = window.location.href
-    if (!gradioURL.endsWith('?__theme=dark')) {
-      window.location.replace(gradioURL + '?__theme=light');
-    } else {
+    if (!gradioURL.endsWith('?__theme=light')) {
       window.location.replace(gradioURL + '?__theme=light');
     }
   });
