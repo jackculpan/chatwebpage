@@ -32,6 +32,14 @@
     <!-- 100% privacy friendly analytics -->
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    
+    <script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.20.1/gradio.js"
+></script>
+
+
+    
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -140,9 +148,11 @@ s0.parentNode.insertBefore(s1,s0);
               <!-- <p class="no-mobile-support">Sorry, there's no mobile support for this right now.</p> -->
             </header>
             <div class="iframe-container">
-              <iframe
+<!--               <iframe
                 src="https://jackculpan-chatwebpage-com.hf.space?__theme=light"
-              ></iframe>
+              ></iframe> -->
+              <gradio-app src="https://jackculpan-chatwebpage-com.hf.space"></gradio-app>
+
             </div>
             <p style="font-size: 16px; text-align: center; margin: 0px; padding-top: 12px;">What is ChatWebpage?</p>
             <p style="font-size: 12px; text-align: center; margin: 0px; padding-bottom: 12px;">ChatWebpage is a website that lets you chat with any webpage. Ask it questions about the page, for more information, test yourself on the content and more! Powered by OpenAI's GPT-3.5.</p>
